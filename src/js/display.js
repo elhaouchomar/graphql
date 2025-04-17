@@ -210,8 +210,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", (e) => {
     const disconnectBtn = e.target.closest("#disconnect-btn");
     if (disconnectBtn) {
-      logout();
       disconnectBtn.remove();
+      logout();
       document.title = "Login";
       container.innerHTML = "";
       showLoginForm();
