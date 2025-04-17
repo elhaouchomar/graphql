@@ -189,6 +189,7 @@ export async function initializeProfilePage() {
     renderLineGraph(projects, totaleXp, level);
   } catch (error) {
     container.innerHTML = "<h1>No data available!</h1>";
+    createDisconnectButton()
   }
 }
 
